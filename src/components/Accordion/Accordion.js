@@ -55,6 +55,8 @@ function Accordion(props) {
               display: "flex",
               justifyContent: "space-between",
               marginBottom: "10px",
+              padding: "18px",
+              borderBottom: "1px solid #aaa",
             }}
           >
             <div>
@@ -75,10 +77,10 @@ function Accordion(props) {
                   marginBottom: "10px",
                 }}
               >
-                <div>
+                <div style={{ padding: "18px" }}>
                   <p>{props.data[key].label}</p>
                 </div>
-                <div className="edit-amount">
+                <div className="edit-amount" style={{ padding: "18px" }}>
                   {editingItem === key ? (
                     <span>
                       <input
@@ -99,7 +101,7 @@ function Accordion(props) {
                   ) : (
                     <span>{props.data[key].amount}</span>
                   )}
-                  <div>
+                  <div style={{ marginLeft: "10px" }}>
                     <i
                       className={
                         editingItem === key
