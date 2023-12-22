@@ -1,10 +1,103 @@
-.app-container {
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  font-size: 13px;
+  color: rgb(53, 53, 53);
+}
+
+.chapter-container {
   margin: auto;
   width: 80%;
   padding-bottom: 20px;
 }
 
-/* Header CSS */
+.chapter-info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.chapter-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.year {
+  border: 1px solid rgb(158, 158, 158);
+  border-radius: 5px;
+  padding: 3px 12px;
+}
+
+.amount-not-declared {
+  background: rgb(255, 226, 198);
+  margin-top: 26px;
+  margin-bottom: 24px;
+  padding: 10px 25px;
+  color: rgb(116, 28, 28);
+}
+
+.amount-not-declared p {
+  color: rgb(116, 28, 28);
+}
+
+.declaration {
+  margin-bottom: 30px;
+  padding: 5px 20px;
+}
+
+.declaration h4 {
+  font-size: 17px;
+  /* padding-bottom: 5px; */
+}
+
+.declaration-details {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.icon-section {
+  display: flex;
+  padding: 5px 20px;
+}
+
+.icon-section .icon img {
+  border-radius: 100%;
+}
+
+.icon-section .amount-info {
+  padding-left: 15px;
+}
+
+.amount {
+  padding-top: 5px;
+  font-size: 15px;
+  color: rgb(15, 15, 15);
+  font-weight: 700;
+}
+
+.tax-regime {
+  background: #f1f1f1;
+  padding: 10px 20px;
+}
+
+.condition {
+  color: rgb(90, 168, 0);
+  width: 60%;
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+.btn-save {
+  background-color: rgb(33, 107, 255);
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  color: #fff;
+}
+
 .head-top {
   display: flex;
   align-items: center;

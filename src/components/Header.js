@@ -3,12 +3,20 @@ import React from "react"
 const Header = () => {
   return (
     <div className="head-top">
-      <div>icon</div>
-      <div>icon</div>
+      <div>
+        <i class="fa-solid fa-question"></i>
+      </div>
+      <div>
+        <i class="fa-solid fa-bell"></i>
+      </div>
       <div className="head-user">
-        <div>icon</div>
+        <div>
+          <i class="fa-solid fa-user"></i>
+        </div>
         <p>Abhishek Mohanty</p>
-        <div>icon</div>
+        <div>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
       </div>
     </div>
   )
