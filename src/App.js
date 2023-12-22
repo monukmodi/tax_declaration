@@ -55,7 +55,6 @@ function App() {
   }
 
   const handleSave = () => {
-    // Update the amounts in the apiData with the edited amounts
     const updatedApiData = Object.keys(apiData).map((key) => ({
       ...apiData[key],
       amount:
@@ -64,15 +63,9 @@ function App() {
           : apiData[key].amount,
     }))
 
-    // Log the updated response object
     console.log("Updated response object:", updatedApiData)
-
-    // You can use the updatedApiData for further actions or API calls
-
-    // Optionally, you can set the updated data back to the state
     setApiData(updatedApiData)
 
-    // Clear the edited amounts
     setEditedAmounts({})
   }
 

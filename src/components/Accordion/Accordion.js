@@ -1,10 +1,9 @@
-// Accordion.js
 import React, { useState, useRef, useEffect } from "react"
 import "./Accordion.css"
 
 function Accordion(props) {
   const [isActive, setIsActive] = useState(false)
-  const [editingItem, setEditingItem] = useState(null) // Track the item being edited
+  const [editingItem, setEditingItem] = useState(null)
   const contentRef = useRef(null)
   const [contentHeight, setContentHeight] = useState("0px")
   const [editedAmount, setEditedAmount] = useState({})
@@ -23,7 +22,6 @@ function Accordion(props) {
 
   const handleEditClick = (key) => {
     if (editingItem === key) {
-      // If already editing, clear the editedAmount for this item
       setEditedAmount((prev) => ({ ...prev, [key]: undefined }))
       setEditingItem(null)
     } else {
